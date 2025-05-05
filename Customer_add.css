@@ -1,0 +1,148 @@
+
+body { 
+  background-color: #f4f4f9;
+  text-align: center;
+}
+
+/* Trigger Button */
+.button-container {
+  display: flex;
+  justify-content: flex-end; /* Push button to the right */
+  margin-right: 150px; /* Margin on the right */
+  padding: 10px;
+}
+
+/* Button Styling */
+#openModal {
+  margin: 0;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+#openModal:hover {
+  background-color: #218838;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Box */
+.modal-box {
+  background: #ccc;
+  width: 600px;
+  padding: 20px;
+  padding-top: 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  margin-top: 60px; /* Modal वरून 85px अंतरावर */
+}
+
+
+/* Modal Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* Form Row Styling */
+.row {
+  margin-top: 0;
+  display: flex;
+  gap: 20px;
+}
+
+/* Column Styling */
+.column {
+  flex: 1;
+}
+
+/* Form Labels and Input Fields */
+label {
+  font-weight: bold;
+  color: #333;
+}
+input[type="date"],
+select {
+  width: 100%;
+  padding: 6.8px;
+  margin-top: 3px;
+  /* margin-bottom: 3px; */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+  border-color: #333;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+  border-color: #333;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Save Button */
+.save-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
