@@ -1,1 +1,5 @@
 # Pharmacy-Management-System-Project
+The Pharmacy Management System is a web-based project developed using PHP and MySQL to automate and simplify pharmacy operations. It replaces manual, error-prone methods with a digital system that ensures accuracy, speed, and reliability. The system manages medicine records, customer, employee, and supplier details, as well as purchases and sales transactions!
+Featuring an admin and pharmacist panel, it supports product and sales management, notifications, and report generation. This system improves efficiency, reduces workload, and enhances customer service in pharmacy operations.
+The system consists of two types of users: Admin and Pharmacist. The Admin holds the highest authority in the system and can perform various tasks such as adding new medicines, managing stock, registering suppliers, updating employee details, and generating sales reports. On the other hand, Pharmacists can perform limited tasks such as registering sales, viewing stock, and adding new customers to the database.
+
